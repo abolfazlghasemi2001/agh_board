@@ -29,6 +29,7 @@ class PinBoardIME : InputMethodService() {
     private lateinit var repository: PinRepository
     private val serviceScope = CoroutineScope(Dispatchers.Main + SupervisorJob())
     private lateinit var binding: KeyboardViewBinding
+    private lateinit var themedContext: ContextThemeWrapper
     private lateinit var adapter: KeyboardPinAdapter
 
     private var allPins: List<Pin> = emptyList()
@@ -42,7 +43,7 @@ class PinBoardIME : InputMethodService() {
     }
 
     override fun onCreateInputView(): View {
-    val themedContext = ContextThemeWrapper(this, R.style.Theme_PinBoard)
+        themedContext = ContextThemeWrapper(this, R.style.Theme_PinBoard)
     val themedInflater = LayoutInflater.from(themedContext).cloneInContext(themedContext)
     binding = KeyboardViewBinding.inflate(themedInflater)
 
@@ -110,7 +111,7 @@ class PinBoardIME : InputMethodService() {
         val previouslySelected = selectedCategory
         group.removeAllViews()
 
-        val allChip = Chip(this).apply {
+        val allChip = Chip(themedContext).apply {
             text = getString(R.string.all_category)
             tag = CATEGORY_ALL
             isCheckable = true
@@ -120,7 +121,7 @@ class PinBoardIME : InputMethodService() {
 
         val categories = pins.map { it.category }.distinct().sorted()
         categories.forEach { category ->
-            val chip = Chip(this).apply {
+            val chip = Chip(themedContext).apply {
                 text = category
                 tag = category
                 isCheckable = true

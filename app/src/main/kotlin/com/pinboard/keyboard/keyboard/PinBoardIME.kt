@@ -1,5 +1,6 @@
 package com.pinboard.keyboard.keyboard
 
+import android.view.ViewGroup
 import android.inputmethodservice.InputMethodService
 import android.inputmethodservice.Keyboard
 import android.inputmethodservice.KeyboardView

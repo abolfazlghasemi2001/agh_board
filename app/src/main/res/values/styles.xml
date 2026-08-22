@@ -1,33 +1,44 @@
-<style name="KeyButton">
-    <item name="android:layout_width">0dp</item>
-    <item name="android:layout_height">match_parent</item>
-    <item name="android:layout_weight">1</item>
-    <item name="android:textSize">18sp</item>
-    <item name="android:textColor">#FFFFFF</item>
-    <item name="android:background">#444444</item>
-    <item name="android:layout_margin">2dp</item>
-    <item name="android:gravity">center</item>
-    <item name="android:padding">0dp</item>
-</style>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
 
-<style name="KeyButtonCtrl">
-    <item name="android:layout_width">0dp</item>
-    <item name="android:layout_height">match_parent</item>
-    <item name="android:layout_weight">1.2</item>
-    <item name="android:textSize">18sp</item>
-    <item name="android:textColor">#FFFFFF</item>
-    <item name="android:background">#555555</item>
-    <item name="android:layout_margin">2dp</item>
-    <item name="android:gravity">center</item>
-</style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+    </style>
 
-<style name="KeyButtonSpace">
-    <item name="android:layout_width">0dp</item>
-    <item name="android:layout_height">match_parent</item>
-    <item name="android:layout_weight">4</item>
-    <item name="android:textSize">14sp</item>
-    <item name="android:textColor">#FFFFFF</item>
-    <item name="android:background">#555555</item>
-    <item name="android:layout_margin">2dp</item>
-    <item name="android:gravity">center</item>
-</style>
+    <style name="KeyButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#444444</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="KeyButtonCtrl">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#555555</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="KeyButtonSpace">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#555555</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

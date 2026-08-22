@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort_menu"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/sort_recent" android:title="@string/sort_recent" />
+            <item android:id="@+id/sort_usage" android:title="@string/sort_usage" />
+            <item android:id="@+id/sort_title" android:title="@string/sort_title" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_backup"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/action_backup"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_restore"
+        android:icon="@drawable/ic_restore"
+        android:title="@string/action_restore"
+        app:showAsAction="ifRoom" />
+</menu>

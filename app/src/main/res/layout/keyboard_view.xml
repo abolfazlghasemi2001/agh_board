@@ -50,7 +50,7 @@
             android:layout_width="38dp"
             android:layout_height="38dp"
             android:layout_marginStart="6dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/keyboard_settings"
             android:src="@drawable/ic_settings" />
     </LinearLayout>

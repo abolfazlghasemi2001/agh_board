@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- تم اصلی اپلیکیشن با AppCompat -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#6200EE</item>
         <item name="colorPrimaryDark">#3700B3</item>
         <item name="colorAccent">#03DAC5</item>
+        <item name="android:windowBackground">#1A1A1A</item>
     </style>
 
+    <!-- استایل دکمه‌های حروف معمولی -->
     <style name="KeyButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -17,19 +20,24 @@
         <item name="android:layout_margin">2dp</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">0dp</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
+    <!-- استایل دکمه‌های کنترلی (Shift, Backspace, Enter) -->
     <style name="KeyButtonCtrl">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1.2</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:layout_weight">1.3</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:background">#555555</item>
         <item name="android:layout_margin">2dp</item>
         <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
+    <!-- استایل دکمه Space (بزرگ‌تر) -->
     <style name="KeyButtonSpace">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -39,6 +47,8 @@
         <item name="android:background">#555555</item>
         <item name="android:layout_margin">2dp</item>
         <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
 </resources>

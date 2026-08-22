@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6C5CE7</color>
+    <color name="primary_dark">#4834D4</color>
+    <color name="accent">#00CEC9</color>
+    <color name="favorite_gold">#FDCB6E</color>
+    <color name="background">#F7F7FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#2D3436</color>
+    <color name="text_secondary">#636E72</color>
+    <color name="divider">#E5E5EA</color>
+    <color name="danger">#E17055</color>
+    <color name="keyboard_bg">#EDEDF5</color>
+</resources>

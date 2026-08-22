@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PinBoard Keyboard Pro</string>
+
+    <!-- Main -->
+    <string name="search_hint">جستجو در عنوان یا متن…</string>
+    <string name="all_category">همه</string>
+    <string name="favorites_category">⭐ علاقه‌مندی‌ها</string>
+    <string name="add_pin">افزودن پین جدید</string>
+    <string name="edit_pin">ویرایش پین</string>
+    <string name="new_pin">پین جدید</string>
+    <string name="title_hint">عنوان</string>
+    <string name="text_hint">متن</string>
+    <string name="category_hint">دسته‌بندی</string>
+    <string name="favorite_checkbox">علاقه‌مندی</string>
+    <string name="save">ذخیره</string>
+    <string name="cancel">انصراف</string>
+    <string name="delete">حذف</string>
+    <string name="delete_confirm_title">حذف پین</string>
+    <string name="delete_confirm_message">آیا از حذف این پین مطمئن هستید؟</string>
+    <string name="pin_deleted">پین حذف شد</string>
+    <string name="empty_title_error">عنوان نمی‌تواند خالی باشد</string>
+    <string name="empty_text_error">متن نمی‌تواند خالی باشد</string>
+    <string name="usage_count">استفاده: %1$d بار</string>
+    <string name="no_pins_found">هیچ پینی یافت نشد</string>
+
+    <!-- Backup / Restore -->
+    <string name="action_backup">پشتیبان‌گیری (Backup)</string>
+    <string name="action_restore">بازیابی (Restore)</string>
+    <string name="backup_success">پشتیبان‌گیری با موفقیت انجام شد (%1$d پین)</string>
+    <string name="backup_failed">پشتیبان‌گیری ناموفق بود</string>
+    <string name="restore_success">%1$d پین با موفقیت بازیابی شد</string>
+    <string name="restore_failed">بازیابی ناموفق بود، فایل معتبر نیست</string>
+    <string name="backup_file_name">pinboard_backup.json</string>
+
+    <!-- Sort -->
+    <string name="sort_menu">مرتب‌سازی</string>
+    <string name="sort_recent">آخرین استفاده</string>
+    <string name="sort_usage">بیشترین استفاده</string>
+    <string name="sort_title">الفبایی (عنوان)</string>
+
+    <!-- Keyboard -->
+    <string name="keyboard_search_hint">جستجو…</string>
+    <string name="keyboard_settings">مدیریت پین‌ها</string>
+    <string name="keyboard_empty">پینی برای نمایش نیست</string>
+
+    <!-- Keyboard tabs -->
+    <string name="tab_recent">🕘 اخیر</string>
+    <string name="tab_favorites">⭐ علاقه‌مندی</string>
+    <string name="tab_categories">📂 دسته‌ها</string>
+</resources>

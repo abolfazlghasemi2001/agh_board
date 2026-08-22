@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="4dp">
 
-    <!-- نوار جستجو (با آی‌دی مورد نیاز) -->
+    <!-- نوار جستجو -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="42dp"
@@ -56,7 +56,7 @@
             android:src="@drawable/ic_settings" />
     </LinearLayout>
 
-    <!-- تب‌ها (با آی‌دی‌های مورد نیاز) -->
+    <!-- تب‌ها -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="36dp"
@@ -116,7 +116,7 @@
             app:singleSelection="true" />
     </HorizontalScrollView>
 
-    <!-- ردیف اول: اعداد -->
+    <!-- ردیف 1: اعداد -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -124,19 +124,19 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
 
-        <Button android:text="1" style="@style/KeyButton" />
-        <Button android:text="2" style="@style/KeyButton" />
-        <Button android:text="3" style="@style/KeyButton" />
-        <Button android:text="4" style="@style/KeyButton" />
-        <Button android:text="5" style="@style/KeyButton" />
-        <Button android:text="6" style="@style/KeyButton" />
-        <Button android:text="7" style="@style/KeyButton" />
-        <Button android:text="8" style="@style/KeyButton" />
-        <Button android:text="9" style="@style/KeyButton" />
-        <Button android:text="0" style="@style/KeyButton" />
+        <Button android:text="1" style="@style/KeyButton" android:tag="1" />
+        <Button android:text="2" style="@style/KeyButton" android:tag="2" />
+        <Button android:text="3" style="@style/KeyButton" android:tag="3" />
+        <Button android:text="4" style="@style/KeyButton" android:tag="4" />
+        <Button android:text="5" style="@style/KeyButton" android:tag="5" />
+        <Button android:text="6" style="@style/KeyButton" android:tag="6" />
+        <Button android:text="7" style="@style/KeyButton" android:tag="7" />
+        <Button android:text="8" style="@style/KeyButton" android:tag="8" />
+        <Button android:text="9" style="@style/KeyButton" android:tag="9" />
+        <Button android:text="0" style="@style/KeyButton" android:tag="0" />
     </LinearLayout>
 
-    <!-- ردیف دوم: حروف انگلیسی (qwerty) -->
+    <!-- ردیف 2: QWERTY (انگلیسی) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -144,19 +144,19 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
 
-        <Button android:text="q" style="@style/KeyButton" />
-        <Button android:text="w" style="@style/KeyButton" />
-        <Button android:text="e" style="@style/KeyButton" />
-        <Button android:text="r" style="@style/KeyButton" />
-        <Button android:text="t" style="@style/KeyButton" />
-        <Button android:text="y" style="@style/KeyButton" />
-        <Button android:text="u" style="@style/KeyButton" />
-        <Button android:text="i" style="@style/KeyButton" />
-        <Button android:text="o" style="@style/KeyButton" />
-        <Button android:text="p" style="@style/KeyButton" />
+        <Button android:text="q" style="@style/KeyButton" android:tag="q" />
+        <Button android:text="w" style="@style/KeyButton" android:tag="w" />
+        <Button android:text="e" style="@style/KeyButton" android:tag="e" />
+        <Button android:text="r" style="@style/KeyButton" android:tag="r" />
+        <Button android:text="t" style="@style/KeyButton" android:tag="t" />
+        <Button android:text="y" style="@style/KeyButton" android:tag="y" />
+        <Button android:text="u" style="@style/KeyButton" android:tag="u" />
+        <Button android:text="i" style="@style/KeyButton" android:tag="i" />
+        <Button android:text="o" style="@style/KeyButton" android:tag="o" />
+        <Button android:text="p" style="@style/KeyButton" android:tag="p" />
     </LinearLayout>
 
-    <!-- ردیف سوم: حروف انگلیسی (asdfghjkl) -->
+    <!-- ردیف 3: ASDF (انگلیسی) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -164,18 +164,18 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
 
-        <Button android:text="a" style="@style/KeyButton" />
-        <Button android:text="s" style="@style/KeyButton" />
-        <Button android:text="d" style="@style/KeyButton" />
-        <Button android:text="f" style="@style/KeyButton" />
-        <Button android:text="g" style="@style/KeyButton" />
-        <Button android:text="h" style="@style/KeyButton" />
-        <Button android:text="j" style="@style/KeyButton" />
-        <Button android:text="k" style="@style/KeyButton" />
-        <Button android:text="l" style="@style/KeyButton" />
+        <Button android:text="a" style="@style/KeyButton" android:tag="a" />
+        <Button android:text="s" style="@style/KeyButton" android:tag="s" />
+        <Button android:text="d" style="@style/KeyButton" android:tag="d" />
+        <Button android:text="f" style="@style/KeyButton" android:tag="f" />
+        <Button android:text="g" style="@style/KeyButton" android:tag="g" />
+        <Button android:text="h" style="@style/KeyButton" android:tag="h" />
+        <Button android:text="j" style="@style/KeyButton" android:tag="j" />
+        <Button android:text="k" style="@style/KeyButton" android:tag="k" />
+        <Button android:text="l" style="@style/KeyButton" android:tag="l" />
     </LinearLayout>
 
-    <!-- ردیف چهارم: حروف فارسی (ا تا خ) -->
+    <!-- ردیف 4: ZXCV (انگلیسی) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -183,18 +183,16 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
 
-        <Button android:text="ا" style="@style/KeyButton" />
-        <Button android:text="ب" style="@style/KeyButton" />
-        <Button android:text="پ" style="@style/KeyButton" />
-        <Button android:text="ت" style="@style/KeyButton" />
-        <Button android:text="ث" style="@style/KeyButton" />
-        <Button android:text="ج" style="@style/KeyButton" />
-        <Button android:text="چ" style="@style/KeyButton" />
-        <Button android:text="ح" style="@style/KeyButton" />
-        <Button android:text="خ" style="@style/KeyButton" />
+        <Button android:text="z" style="@style/KeyButton" android:tag="z" />
+        <Button android:text="x" style="@style/KeyButton" android:tag="x" />
+        <Button android:text="c" style="@style/KeyButton" android:tag="c" />
+        <Button android:text="v" style="@style/KeyButton" android:tag="v" />
+        <Button android:text="b" style="@style/KeyButton" android:tag="b" />
+        <Button android:text="n" style="@style/KeyButton" android:tag="n" />
+        <Button android:text="m" style="@style/KeyButton" android:tag="m" />
     </LinearLayout>
 
-    <!-- ردیف پنجم: دکمه‌های کنترل -->
+    <!-- ردیف 5: فارسی (ا تا خ) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -202,13 +200,75 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
 
-        <Button android:text="⇧" style="@style/KeyButtonCtrl" />
-        <Button android:text="Space" style="@style/KeyButtonSpace" />
-        <Button android:text="⌫" style="@style/KeyButtonCtrl" />
-        <Button android:text="↵" style="@style/KeyButtonCtrl" />
+        <Button android:text="ا" style="@style/KeyButton" android:tag="ا" />
+        <Button android:text="ب" style="@style/KeyButton" android:tag="ب" />
+        <Button android:text="پ" style="@style/KeyButton" android:tag="پ" />
+        <Button android:text="ت" style="@style/KeyButton" android:tag="ت" />
+        <Button android:text="ث" style="@style/KeyButton" android:tag="ث" />
+        <Button android:text="ج" style="@style/KeyButton" android:tag="ج" />
+        <Button android:text="چ" style="@style/KeyButton" android:tag="چ" />
+        <Button android:text="ح" style="@style/KeyButton" android:tag="ح" />
+        <Button android:text="خ" style="@style/KeyButton" android:tag="خ" />
     </LinearLayout>
 
-    <!-- RecyclerView برای نمایش پین‌ها (با آی‌دی مورد نیاز) -->
+    <!-- ردیف 6: فارسی (د تا غ) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="د" style="@style/KeyButton" android:tag="د" />
+        <Button android:text="ذ" style="@style/KeyButton" android:tag="ذ" />
+        <Button android:text="ر" style="@style/KeyButton" android:tag="ر" />
+        <Button android:text="ز" style="@style/KeyButton" android:tag="ز" />
+        <Button android:text="ژ" style="@style/KeyButton" android:tag="ژ" />
+        <Button android:text="س" style="@style/KeyButton" android:tag="س" />
+        <Button android:text="ش" style="@style/KeyButton" android:tag="ش" />
+        <Button android:text="ص" style="@style/KeyButton" android:tag="ص" />
+        <Button android:text="ض" style="@style/KeyButton" android:tag="ض" />
+        <Button android:text="ط" style="@style/KeyButton" android:tag="ط" />
+        <Button android:text="ظ" style="@style/KeyButton" android:tag="ظ" />
+        <Button android:text="ع" style="@style/KeyButton" android:tag="ع" />
+        <Button android:text="غ" style="@style/KeyButton" android:tag="غ" />
+    </LinearLayout>
+
+    <!-- ردیف 7: فارسی (ف تا ی) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="ف" style="@style/KeyButton" android:tag="ف" />
+        <Button android:text="ق" style="@style/KeyButton" android:tag="ق" />
+        <Button android:text="ک" style="@style/KeyButton" android:tag="ک" />
+        <Button android:text="گ" style="@style/KeyButton" android:tag="گ" />
+        <Button android:text="ل" style="@style/KeyButton" android:tag="ل" />
+        <Button android:text="م" style="@style/KeyButton" android:tag="م" />
+        <Button android:text="ن" style="@style/KeyButton" android:tag="ن" />
+        <Button android:text="و" style="@style/KeyButton" android:tag="و" />
+        <Button android:text="ه" style="@style/KeyButton" android:tag="ه" />
+        <Button android:text="ی" style="@style/KeyButton" android:tag="ی" />
+    </LinearLayout>
+
+    <!-- ردیف 8: دکمه‌های کنترل -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="⇧" style="@style/KeyButtonCtrl" android:tag="shift" />
+        <Button android:text="Space" style="@style/KeyButtonSpace" android:tag="space" />
+        <Button android:text="⌫" style="@style/KeyButtonCtrl" android:tag="backspace" />
+        <Button android:text="↵" style="@style/KeyButtonCtrl" android:tag="enter" />
+    </LinearLayout>
+
+    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/kbRecyclerPins"
         android:layout_width="match_parent"
@@ -217,7 +277,7 @@
         android:layout_weight="1"
         android:clipToPadding="false" />
 
-    <!-- متن خالی (با آی‌دی مورد نیاز) -->
+    <!-- متن خالی -->
     <TextView
         android:id="@+id/kbTextEmpty"
         android:layout_width="match_parent"

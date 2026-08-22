@@ -2,135 +2,143 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="280dp"
-    android:background="@color/keyboard_bg"
-    android:layoutDirection="rtl"
+    android:layout_height="wrap_content"
+    android:background="#2c2c2c"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="4dp">
 
+    <!-- ردیف اول: اعداد -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_search_field"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingHorizontal="8dp">
-
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:src="@drawable/ic_search" />
-
-            <EditText
-                android:id="@+id/kbEditSearch"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@null"
-                android:hint="@string/keyboard_search_hint"
-                android:imeOptions="actionDone"
-                android:inputType="text"
-                android:maxLines="1"
-                android:paddingHorizontal="6dp"
-                android:textColor="@color/text_primary"
-                android:textColorHint="@color/text_secondary"
-                android:textDirection="rtl"
-                android:textSize="13sp" />
-        </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/kbBtnSettings"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="6dp"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
-            android:contentDescription="@string/keyboard_settings"
-            android:src="@drawable/ic_settings" />
-    </LinearLayout>
-
-    <!-- اخیر / علاقه‌مندی / دسته‌ها -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:layout_marginTop="6dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/kbTabRecent"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_keyboard_tab"
-            android:gravity="center"
-            android:text="@string/tab_recent"
-            android:textColor="@color/keyboard_tab_text"
-            android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/kbTabFavorites"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="1"
-            android:background="@drawable/bg_keyboard_tab"
-            android:gravity="center"
-            android:text="@string/tab_favorites"
-            android:textColor="@color/keyboard_tab_text"
-            android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/kbTabCategories"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/bg_keyboard_tab"
-            android:gravity="center"
-            android:text="@string/tab_categories"
-            android:textColor="@color/keyboard_tab_text"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-    <HorizontalScrollView
-        android:id="@+id/kbCategoryScroll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:scrollbars="none"
-        android:visibility="gone">
-
-        <com.google.android.material.chip.ChipGroup
-            android:id="@+id/kbChipGroupCategories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:singleLine="true"
-            app:singleSelection="true" />
-    </HorizontalScrollView>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/kbRecyclerPins"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="6dp"
-        android:layout_weight="1"
-        android:clipToPadding="false" />
-
-    <TextView
-        android:id="@+id/kbTextEmpty"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="50dp"
         android:gravity="center"
-        android:text="@string/keyboard_empty"
-        android:textColor="@color/text_secondary"
-        android:textSize="13sp"
-        android:visibility="gone" />
+        android:orientation="horizontal">
+
+        <Button android:text="1" style="@style/KeyButton" />
+        <Button android:text="2" style="@style/KeyButton" />
+        <Button android:text="3" style="@style/KeyButton" />
+        <Button android:text="4" style="@style/KeyButton" />
+        <Button android:text="5" style="@style/KeyButton" />
+        <Button android:text="6" style="@style/KeyButton" />
+        <Button android:text="7" style="@style/KeyButton" />
+        <Button android:text="8" style="@style/KeyButton" />
+        <Button android:text="9" style="@style/KeyButton" />
+        <Button android:text="0" style="@style/KeyButton" />
+    </LinearLayout>
+
+    <!-- ردیف دوم: حروف انگلیسی (qwerty) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="q" style="@style/KeyButton" />
+        <Button android:text="w" style="@style/KeyButton" />
+        <Button android:text="e" style="@style/KeyButton" />
+        <Button android:text="r" style="@style/KeyButton" />
+        <Button android:text="t" style="@style/KeyButton" />
+        <Button android:text="y" style="@style/KeyButton" />
+        <Button android:text="u" style="@style/KeyButton" />
+        <Button android:text="i" style="@style/KeyButton" />
+        <Button android:text="o" style="@style/KeyButton" />
+        <Button android:text="p" style="@style/KeyButton" />
+    </LinearLayout>
+
+    <!-- ردیف سوم: حروف انگلیسی (asdfghjkl) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="a" style="@style/KeyButton" />
+        <Button android:text="s" style="@style/KeyButton" />
+        <Button android:text="d" style="@style/KeyButton" />
+        <Button android:text="f" style="@style/KeyButton" />
+        <Button android:text="g" style="@style/KeyButton" />
+        <Button android:text="h" style="@style/KeyButton" />
+        <Button android:text="j" style="@style/KeyButton" />
+        <Button android:text="k" style="@style/KeyButton" />
+        <Button android:text="l" style="@style/KeyButton" />
+    </LinearLayout>
+
+    <!-- ردیف چهارم: حروف فارسی (ابتدا تا خ) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="ا" style="@style/KeyButton" />
+        <Button android:text="ب" style="@style/KeyButton" />
+        <Button android:text="پ" style="@style/KeyButton" />
+        <Button android:text="ت" style="@style/KeyButton" />
+        <Button android:text="ث" style="@style/KeyButton" />
+        <Button android:text="ج" style="@style/KeyButton" />
+        <Button android:text="چ" style="@style/KeyButton" />
+        <Button android:text="ح" style="@style/KeyButton" />
+        <Button android:text="خ" style="@style/KeyButton" />
+    </LinearLayout>
+
+    <!-- ردیف پنجم: حروف فارسی (د تا غ) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="د" style="@style/KeyButton" />
+        <Button android:text="ذ" style="@style/KeyButton" />
+        <Button android:text="ر" style="@style/KeyButton" />
+        <Button android:text="ز" style="@style/KeyButton" />
+        <Button android:text="ژ" style="@style/KeyButton" />
+        <Button android:text="س" style="@style/KeyButton" />
+        <Button android:text="ش" style="@style/KeyButton" />
+        <Button android:text="ص" style="@style/KeyButton" />
+        <Button android:text="ض" style="@style/KeyButton" />
+        <Button android:text="ط" style="@style/KeyButton" />
+        <Button android:text="ظ" style="@style/KeyButton" />
+        <Button android:text="ع" style="@style/KeyButton" />
+        <Button android:text="غ" style="@style/KeyButton" />
+    </LinearLayout>
+
+    <!-- ردیف ششم: حروف فارسی (ف تا ی) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="ف" style="@style/KeyButton" />
+        <Button android:text="ق" style="@style/KeyButton" />
+        <Button android:text="ک" style="@style/KeyButton" />
+        <Button android:text="گ" style="@style/KeyButton" />
+        <Button android:text="ل" style="@style/KeyButton" />
+        <Button android:text="م" style="@style/KeyButton" />
+        <Button android:text="ن" style="@style/KeyButton" />
+        <Button android:text="و" style="@style/KeyButton" />
+        <Button android:text="ه" style="@style/KeyButton" />
+        <Button android:text="ی" style="@style/KeyButton" />
+    </LinearLayout>
+
+    <!-- ردیف هفتم: دکمه‌های کنترل -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <Button android:text="⇧" style="@style/KeyButtonCtrl" />
+        <Button android:text=" " style="@style/KeyButtonSpace" />
+        <Button android:text="⌫" style="@style/KeyButtonCtrl" />
+        <Button android:text="↵" style="@style/KeyButtonCtrl" />
+    </LinearLayout>
 
 </LinearLayout>

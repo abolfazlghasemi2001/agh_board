@@ -42,7 +42,9 @@ class PinBoardIME : InputMethodService() {
     }
 
     override fun onCreateInputView(): View {
-        binding = KeyboardViewBinding.inflate(layoutInflater)
+    val themedContext = ContextThemeWrapper(this, R.style.Theme_PinBoard)
+    val themedInflater = LayoutInflater.from(themedContext).cloneInContext(themedContext)
+    binding = KeyboardViewBinding.inflate(themedInflater)
 
         adapter = KeyboardPinAdapter(
             onInsert = { pin -> insertPin(pin) },
